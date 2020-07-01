@@ -1,1 +1,16 @@
 <h1>Make your form here</h1>
+<form method="POST" action="/pirates">
+  <h2>Pirate</h2>
+  <label>Name: </label><input type="text" name="pirate[name]"></input></br>
+  <label>Weight: </label><input type="text" name="pirate[weight]"></input></br>
+  <label>Height: </label><input type="text" name="pirate[height]"></input></br>
+  <h2>Ship 1</h2>
+  <label>Name: </label><input type="text" id="ship_name_1" name="pirate[ships][][name]"></input></br>
+  <label>Type: </label><input type="text" id="ship_type_1" name="pirate[ships][][type]"></input></br>
+  <label>Booty: </label><input type="text" id="ship_booty_1" name="pirate[ships][][booty]"></input></br>
+  <h2>Ship 2</h2>
+  <label>Name: </label><input type="text" id="ship_name_2" name="pirate[ships][][name]"></input></br>
+  <label>Type: </label><input type="text" id="ship_type_2" name="pirate[ships][][type]"></input></br>
+  <label>Booty: </label><input type="text" id="ship_booty_2" name="pirate[ships][][booty]"></input></br>
+  <button type ="submit" id="submit">Submit</button>
+</form>
